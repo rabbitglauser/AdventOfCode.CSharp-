@@ -34,8 +34,8 @@ public class HistorianHysteria
     public static void Main()
     {
         // Example input
-        int[] leftList = { 3, 4, 2, 1, 3, 3 };
-        int[] rightList = { 4, 3, 5, 3, 9, 3 };
+        int[] leftList = { 1, 2, 3, 3, 3, 4 };
+        int[] rightList = { 3, 3, 3, 4, 5, 9 };
 
         // Create instance of HistorianHysteria
         var historianHysteria = new HistorianHysteria(leftList, rightList);
