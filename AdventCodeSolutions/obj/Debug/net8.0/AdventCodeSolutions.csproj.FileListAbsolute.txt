@@ -1,0 +1,15 @@
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\bin\Debug\net8.0\AdventCodeSolutions.exe
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\bin\Debug\net8.0\AdventCodeSolutions.deps.json
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\bin\Debug\net8.0\AdventCodeSolutions.runtimeconfig.json
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\bin\Debug\net8.0\AdventCodeSolutions.dll
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\bin\Debug\net8.0\AdventCodeSolutions.pdb
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.AssemblyInfoInputs.cache
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.AssemblyInfo.cs
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.csproj.CoreCompileInputs.cache
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.sourcelink.json
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.dll
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\refint\AdventCodeSolutions.dll
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.pdb
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\AdventCodeSolutions.genruntimeconfig.cache
+C:\Users\samue\DEV\projects\M319 test\AdventCodeSolutions\AdventCodeSolutions\obj\Debug\net8.0\ref\AdventCodeSolutions.dll
