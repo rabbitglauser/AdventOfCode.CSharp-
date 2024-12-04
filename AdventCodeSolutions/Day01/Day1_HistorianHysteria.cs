@@ -1,49 +1,56 @@
-﻿
-using System;
-using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
-public class HistorianHysteria
+class Program
 {
-    private int[] leftList;
-    private int[] rightList;
-
-    public HistorianHysteria(int[] leftList, int[] rightList)
+    static void Main(string[] args)
     {
-        // Initialize the lists
-        this.leftList = (int[])leftList.Clone();
-        this.rightList = (int[])rightList.Clone();
+        string filePath = "data.txt"; // File path storing the data pairs
 
-        // Sort both lists in non-decreasing order
-        Array.Sort(this.leftList);
-        Array.Sort(this.rightList);
+        // Process the file and get the sum of absolute differences
+        int sumOfDifferences = ReadAndComputeDifferenceSum(filePath);
+
+        // Print the sum of the differences
+        Console.WriteLine(sumOfDifferences);
     }
 
-    public int CalculateTotalDistance()
+    // Method to read numbers from file and compute sum of absolute differences
+    static int ReadAndComputeDifferenceSum(string filePath)
     {
-        int totalDistance = 0;
+        List<int> list1 = new List<int>(); // List to store first numbers
+        List<int> list2 = new List<int>(); // List to store second numbers
+        int sumOfDifferences = 0; // Variable to track sum of differences
 
-        // Calculate the sum of absolute differences after sorting
-        for (int i = 0; i < leftList.Length; i++)
+        // Read each line of the file
+        string[] lines = File.ReadAllLines(filePath);
+
+        foreach (string line in lines)
         {
-            totalDistance += Math.Abs(leftList[i] - rightList[i]);
+            // Split the line into two numbers based on spaces (removing extra spaces)
+            string[] parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            // Check if two numbers are present and parse them
+            if (parts.Length == 2 &&
+                int.TryParse(parts[0].Trim(), out int number1) &&
+                int.TryParse(parts[1].Trim(), out int number2))
+            {
+                list1.Add(number1); // Add the first number to list1
+                list2.Add(number2); // Add the second number to list2
+            }
         }
 
-        return totalDistance;
-    }
-    
-    public static void Main()
-    {
-        // Example input
-        int[] leftList = { 1, 2, 3, 3, 3, 4 };
-        int[] rightList = { 3, 3, 3, 4, 5, 9 };
+        // Sort the lists in ascending order
+        list1.Sort();
+        list2.Sort();
 
-        // Create instance of HistorianHysteria
-        var historianHysteria = new HistorianHysteria(leftList, rightList);
+        // Add up the absolute differences between corresponding elements
+        for (int i = 0; i < list1.Count; i++)
+        {
+            sumOfDifferences += Math.Abs(list1[i] - list2[i]); // Calculate absolute difference
+        }
 
-        // Calculate the total distance
-        int totalDistance = historianHysteria.CalculateTotalDistance();
-
-        // Output the result
-        Console.WriteLine($"Total distance: {totalDistance}");
+        // Return the sum of the absolute differences
+        return sumOfDifferences;
     }
 }
